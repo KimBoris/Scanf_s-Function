@@ -1,5 +1,22 @@
 #include <stdio.h>
 
+#define MY_K 100
+
+int main2(void)
+{
+	/*int k = 100;
+	char szBuffer[k] = {"Test"};
+	----실행 안됨----
+	const int k = 100;
+	const char szBuffer[k] = {"Test"};
+	이렇게 하면 실행 된다고 했지만. 역시나 안됨.
+
+	아래처럼 전처리기를 활용해서 사용하는 방법 뿐.
+	*/
+
+	char szBuffer[MY_K] = { "Test" };
+	return 0; 
+}
 int main(void)
 {
 	FILE *fp = stdin;
